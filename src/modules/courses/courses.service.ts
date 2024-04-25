@@ -1,11 +1,9 @@
-import { of } from 'rxjs';
 import { Injectable } from '@nestjs/common';
 import { CreateCourseDto } from './dto/create-course.dto';
 import { UpdateCourseDto } from './dto/update-course.dto';
 import { Course } from './entities/course.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { skip } from 'node:test';
 
 @Injectable()
 export class CoursesService {
