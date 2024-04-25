@@ -7,6 +7,7 @@ import { TeacherModule } from './modules/teacher/teacher.module';
 import { LessonModule } from './modules/lesson/lesson.module';
 import { CoursesModule } from './modules/courses/courses.module';
 import { ChapterModule } from './modules/chapter/chapter.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 
 @Module({
@@ -15,7 +16,7 @@ import { ChapterModule } from './modules/chapter/chapter.module';
     MulterModule.register({
       dest: './uploads', // Đường dẫn tới thư mục lưu trữ file tải lên
     }),
-    UsersModule, TeacherModule, LessonModule, CoursesModule,ChapterModule
+    UsersModule, TeacherModule, LessonModule, CoursesModule,ChapterModule, AuthModule
   ],
   controllers: [],
   providers: [],
